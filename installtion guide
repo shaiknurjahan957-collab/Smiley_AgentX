@@ -1,0 +1,135 @@
+# SMILEY AI
+## Installation & Setup Guide
+
+**Project:** Smiley AI — Intelligent Voice Assistant & Desktop Automation  
+**Platform:** Windows 10 / Windows 11  
+**Project Type:** Python-based AI Assistant
+
+### 1. System Requirements
+
+- Windows 10 or Windows 11 (64-bit)
+- Python 3.11 or another version supported by the project dependencies
+- Git (optional, for cloning the repository)
+- Microphone and speakers/headphones
+- Stable internet connection for online AI services
+- Minimum 4 GB RAM recommended; 8 GB or more preferred
+
+### 2. Download the Project
+
+**Option A — Download from GitHub**
+
+1. Open the project repository:
+   https://github.com/shaiknurjahan957-collab/Smiley_AgentX
+2. Click **Code → Download ZIP**.
+3. Extract the ZIP file to a convenient location, such as `C:\Projects\Smiley`.
+
+**Important:** Ensure the repository contains the actual Smiley source code before attempting installation.
+
+**Option B — Clone using Git**
+
+Open PowerShell and run:
+
+```powershell
+git clone https://github.com/shaiknurjahan957-collab/Smiley_AgentX.git
+cd Smiley_AgentX
+```
+
+### 3. Install Python
+
+1. Download Python from https://www.python.org/downloads/
+2. Run the installer.
+3. Select **Add Python to PATH** if that option is available.
+4. Complete the installation.
+
+Verify the installation:
+
+```powershell
+python --version
+python -m pip --version
+```
+
+If `python` is not recognized, try `py --version`.
+
+### 4. Create a Virtual Environment
+
+Open PowerShell inside the project directory:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks activation, you can use the environment's Python directly:
+
+```powershell
+.\.venv\Scripts\python.exe --version
+```
+
+### 5. Install Project Dependencies
+
+Check whether the project contains a `requirements.txt` file.
+
+If present, run:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+If no requirements file exists, install only the dependencies specified by the project. Avoid guessing package versions or installing unnecessary packages.
+
+Some audio libraries may require additional Windows setup.
+
+### 6. Configure API Keys
+
+If Smiley uses online AI services, configure the required API keys according to the project's configuration instructions.
+
+- Obtain keys from the relevant provider.
+- Store them in an environment variable or a locally configured `.env` file if the project supports it.
+- Never publish API keys, passwords, or private credentials to GitHub.
+- Internet access may be required for cloud-based AI features.
+
+### 7. Run Smiley AI
+
+Locate the project's documented entry-point file, such as `main.py`, `smiley.py`, or another specified script.
+
+Run the actual entry point, for example:
+
+```powershell
+python main.py
+```
+
+Replace `main.py` with the correct filename if different.
+
+Grant microphone or camera permissions if prompted. Test voice input, AI responses, and the supported automation features.
+
+### 8. Windows Executable (Optional)
+
+If a tested Windows executable is provided, follow the project's release instructions to run it.
+
+If no executable is provided, use the Python setup above. Do not assume that an executable contains every dependency or required configuration.
+
+### 9. Troubleshooting
+
+| Issue | Suggested solution |
+|---|---|
+| Python not recognized | Install Python and reopen the terminal |
+| Module not found | Activate the virtual environment and install the documented requirements |
+| Microphone not working | Check Windows microphone permissions and audio device settings |
+| AI response unavailable | Verify internet connectivity and API configuration |
+| Application fails to launch | Check the terminal error and confirm the entry-point filename |
+| Git clone fails | Check the repository URL and internet connection |
+
+### 10. Security & Usage Notes
+
+- Use only trusted API keys and keep them private.
+- Review automation actions before execution.
+- Obtain user permission before sending messages or performing sensitive operations.
+- Use camera and microphone features responsibly.
+- Follow the applicable service terms and privacy requirements.
+
+### Installation Complete
+
+Smiley AI is ready for testing once the required dependencies and configuration are installed successfully.
+
+**Repository:** https://github.com/shaiknurjahan957-collab/Smiley_AgentX
